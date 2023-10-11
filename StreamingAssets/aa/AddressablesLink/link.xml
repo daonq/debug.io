@@ -1,5 +1,6 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AdjustLight" preserve="all" />
     <type fullname="AllIn1VfxToolkit.Demo.Scripts.AllIn1VfxAutoDestroy" preserve="all" />
     <type fullname="AnimationEvents" preserve="all" />
     <type fullname="CanvasInfoFollowView" preserve="all" />
@@ -10,6 +11,7 @@
     <type fullname="csDestroyEffect" preserve="all" />
     <type fullname="EGA_EffectSound" preserve="all" />
     <type fullname="FadeWhenEnable" preserve="all" />
+    <type fullname="FireTarget" preserve="all" />
     <type fullname="ParticleCollisionInstance" preserve="all" />
     <type fullname="PopupInfo" preserve="all" />
     <type fullname="SkillJump" preserve="all" />

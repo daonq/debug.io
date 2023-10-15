@@ -8,7 +8,6 @@
     <type fullname="CFX_AutoDestructShuriken" preserve="all" />
     <type fullname="CFX_LightFlicker" preserve="all" />
     <type fullname="CharaterManager" preserve="all" />
-    <type fullname="csDestroyEffect" preserve="all" />
     <type fullname="EGA_EffectSound" preserve="all" />
     <type fullname="FadeWhenEnable" preserve="all" />
     <type fullname="FireTarget" preserve="all" />

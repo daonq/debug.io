@@ -14,6 +14,7 @@
     <type fullname="ParticleCollisionInstance" preserve="all" />
     <type fullname="PopupInfo" preserve="all" />
     <type fullname="SkillJump" preserve="all" />
+    <type fullname="TypeClass" preserve="nothing" serialized="true" />
     <type fullname="CartoonFX.CFXR_Effect/CameraShake" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">

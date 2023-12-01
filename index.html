@@ -7,6 +7,7 @@
         content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
     <title>Đấu trường huyền thoại Nuvi</title>
     <link rel="stylesheet" href="TemplateData/style.css">
+
     <style>
         html {
             height: -webkit-fill-available;
@@ -105,7 +106,8 @@
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
         <select id="chooseCamSel" style="display: none;" onchange="SelectCam()"></select>
-        <p style="text-align: center; width:60vw; color: white;">Trải nghiệm thực tế tăng cường này yêu cầu truy cập vào camera của thiết bị.</p>
+        <p style="text-align: center; width:60vw; color: white;">Trải nghiệm thực tế tăng cường này yêu cầu truy cập vào
+            camera của thiết bị.</p>
         <button id="startARButton" onclick="StartAR()" style="display:none">CHO PHÉP</button>
     </div>
     <div id="screenshotDiv" style="display: none;" class="ctaDiv">
@@ -131,6 +133,7 @@
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
+                <h1 style="color:white">Đang tải...</h1>
             </div>
         </div>
         <canvas id="video-canvas"></canvas>
@@ -184,7 +187,7 @@
                 codeUrl: "Build/Builds.wasm",
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: "VRplus",
-                productName: "pokemon_ar",
+                productName: "dautruongnuvi",
                 productVersion: "0.1",
                 //webglContextAttributes: { "preserveDrawingBuffer": true },
                 // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
@@ -287,12 +290,36 @@
             document.getElementById("screenshotImg").style.width = "80vw";
             document.getElementById("screenshotImg").style.height = 80 / window.innerWidth * window.innerHeight + "vw";
         }
+    </script>
 
-        //ENABLE THIS FOR WECHAT
-        // function StartCameraManually() {
-        //     document.getElementById("startWebcamManuallyDiv").style.display = "none";
-        //     iTracker.VIDEO.play()
-        // }
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'G-KBSZP9WN94', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        function SendClickButton(str) {
+            ga('send', {
+                'hitType': 'event',
+                'eventCategory': 'vrplus-demo-category',
+                'eventAction': str,
+                'eventLabel': 'vrplus-label',
+                'eventValue': '1001'
+            });
+            console.log(str);
+        }
     </script>
 </body>
 

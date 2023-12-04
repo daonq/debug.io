@@ -133,7 +133,7 @@
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
-                <h1 style="text-align: center; width:60vw; color:white">Đang tải...</h1>
+                <h1 style="color:white">Đang tải...</h1>
             </div>
         </div>
         <canvas id="video-canvas"></canvas>
@@ -246,7 +246,7 @@
                 ShowError("Failed to start the experience. Camera permission was denied");
             }
         }
-        
+
         async function LoadWebcams() {
             let backCams = [];
             let devices = await navigator.mediaDevices.enumerateDevices();

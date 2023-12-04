@@ -133,7 +133,7 @@
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
-                <h1 style="color:white">Đang tải...</h1>
+                <h1 style="text-align: center; width:60vw; color:white">Đang tải...</h1>
             </div>
         </div>
         <canvas id="video-canvas"></canvas>
@@ -312,13 +312,12 @@
     </script>
 
     <script>
-        function SendClickButton(str) {
+        function SendClickButton(category, action, label) {
             ga('send', {
                 'hitType': 'event',
-                'eventCategory': 'vrplus-demo-category',
-                'eventAction': str,
-                'eventLabel': 'vrplus-label',
-                'eventValue': '1001'
+                'eventCategory': category,
+                'eventAction': action,
+                'eventLabel': label,
             });
             console.log(str);
         }
